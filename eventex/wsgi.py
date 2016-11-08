@@ -14,3 +14,10 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "eventex.settings")
 
 application = Cling(get_wsgi_application())
+
+#import eventex
+
+#if eventex.settings.STATIC_URL == '/static/':
+#    application = Cling(get_wsgi_application())
+# else:
+#     application = get_wsgi_application()
