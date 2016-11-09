@@ -9,15 +9,14 @@ https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
 
 import os
 from dj_static import Cling
+# from django.conf import settings
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "eventex.settings")
 
 application = Cling(get_wsgi_application())
 
-#import eventex
-
-#if eventex.settings.STATIC_URL == '/static/':
-#    application = Cling(get_wsgi_application())
-# else:
-#     application = get_wsgi_application()
+# if settings.STATIC_URL == '/static/':
+#     application = Cling(get_wsgi_application())
+#  else:
+#      application = get_wsgi_application()
