@@ -13,7 +13,7 @@
                     </div>
                 {% endfor %}
             {% endif %}
-            <form action="." method="post">
+            <form action="." method="post" novalidate>
                 {% csrf_token %}
                 <div class="form-row label-block input-text">
                     <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
