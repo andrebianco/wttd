@@ -1,6 +1,7 @@
 .env
 .idea
 .wttd
+.ycm_extra_conf.py
 *.sqlite3
 *pyc
 __pycache__
